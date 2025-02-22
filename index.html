@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apridipia | Mobile App Development</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #5468ff;
-            --dark: #12151e;
+            --primary: #6d5c49;
+            --dark: #1a1a1a;
             --light: #ffffff;
             --gray: #f8f9fc;
             --text: #4a5568;
+            --gold: #d3b78f;
         }
         
         * {
@@ -46,15 +50,23 @@
             align-items: center;
         }
         
-        .logo {
-            font-size: 28px;
-            font-weight: 700;
-            color: var(--dark);
-            text-decoration: none;
+        .logo-container {
+            display: inline-block;
         }
         
-        .logo span {
-            color: var(--primary);
+        .text-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: var(--dark);
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+        
+        .dot {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            color: var(--gold);
+            font-weight: 700;
         }
         
         /* Hero Section */
@@ -197,7 +209,10 @@
     <header>
         <div class="container">
             <nav>
-                <a href="#" class="logo">apridipia<span>.</span></a>
+                <div class="logo-container">
+                    <span class="text-logo">apridipia</span>
+                    <span class="dot">.</span>
+                </div>
             </nav>
         </div>
     </header>
