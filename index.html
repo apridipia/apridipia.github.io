@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apridipia | Mobile App Development</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #5468ff;
+            --dark: #12151e;
+            --light: #ffffff;
+            --gray: #f8f9fc;
+            --text: #4a5568;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            background-color: var(--light);
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            padding: 30px 0;
+            position: relative;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--dark);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--primary);
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: var(--dark);
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            color: var(--text);
+        }
+        
+        .coming-soon-badge {
+            display: inline-block;
+            background-color: var(--gray);
+            color: var(--primary);
+            padding: 8px 16px;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+        
+        /* About Section */
+        .about {
+            padding: 80px 0;
+            background-color: var(--gray);
+        }
+        
+        .about h2 {
+            font-size: 36px;
+            margin-bottom: 16px;
+            color: var(--dark);
+        }
+        
+        .about p {
+            margin-bottom: 24px;
+            max-width: 800px;
+        }
+        
+        .principles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .principle {
+            background-color: var(--light);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .principle:hover {
+            transform: translateY(-5px);
+        }
+        
+        .principle i {
+            color: var(--primary);
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        
+        .principle h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: var(--dark);
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .contact h2 {
+            font-size: 36px;
+            margin-bottom: 16px;
+            color: var(--dark);
+        }
+        
+        .contact p {
+            margin-bottom: 32px;
+        }
+        
+        .email-link {
+            display: inline-block;
+            padding: 12px 32px;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        
+        .email-link:hover {
+            background-color: #4055e5;
+        }
+        
+        /* Footer */
+        footer {
+            padding: 30px 0;
+            text-align: center;
+            color: var(--text);
+            background-color: var(--light);
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 40px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            .principles {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">apridipia<span>.</span></a>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <div class="coming-soon-badge">Coming Soon</div>
+            <h1>Creating apps that <br>make a difference</h1>
+            <p>We're building beautiful, intuitive mobile applications designed to enhance your everyday experiences.</p>
+        </div>
+    </section>
+    
+    <section class="about">
+        <div class="container">
+            <h2>Our Approach</h2>
+            <p>At Apridipia, we believe that great applications are born from a deep understanding of user needs combined with elegant, thoughtful design. We're currently developing our first set of innovative mobile applications.</p>
+            
+            <div class="principles">
+                <div class="principle">
+                    <i class="fas fa-gem"></i>
+                    <h3>Quality First</h3>
+                    <p>We prioritize polished, well-designed applications that stand out for their attention to detail.</p>
+                </div>
+                
+                <div class="principle">
+                    <i class="fas fa-user"></i>
+                    <h3>User-Centered</h3>
+                    <p>Every feature, every interface element is built with real users in mind.</p>
+                </div>
+                
+                <div class="principle">
+                    <i class="fas fa-sync"></i>
+                    <h3>Continuous Improvement</h3>
+                    <p>We regularly update our applications based on user feedback and emerging technologies.</p>
+                </div>
+                
+                <div class="principle">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Privacy & Security</h3>
+                    <p>We respect user data and implement strong security measures in everything we build.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Interested in our upcoming releases? Have questions about Apridipia?</p>
+            <a href="mailto:contact@apridipia.com" class="email-link">Contact Us</a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Apridipia. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
